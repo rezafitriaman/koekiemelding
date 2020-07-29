@@ -1,0 +1,29 @@
+.monster {
+    display: block;
+
+    svg {
+        width: 750px;
+        height: auto;
+
+        .eye {
+            fill:#FFFFFF;stroke:#000000;stroke-width:5;stroke-miterlimit:10;
+        }
+        
+        .eye-ball {
+            stroke:#000000;stroke-miterlimit:10;
+        }
+
+        .mouth-open {
+            fill:#231F20;stroke:#000000;stroke-width:5;stroke-miterlimit:10;
+            opacity: 0;
+        }
+
+        .mouth-close {
+            fill:none;stroke:#000000;stroke-width:5;stroke-miterlimit:10;
+        }
+
+        .body {
+            fill:none;stroke:#000000;stroke-width:5;stroke-miterlimit:10;
+        }
+    }
+}

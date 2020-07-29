@@ -1,0 +1,26 @@
+<div class="container" #container>
+  <div class="row mt-5">
+    <app-switch-package class="col-sm" 
+    *ngFor="let switchPackageElm of switchPackage; index as i"
+    [switchPackage]="switchPackageElm"
+    [index]="i"
+    (dansCookieSelected)="onDansCookieSelected($event)"></app-switch-package>
+  </div>
+  
+  <div class="row mt-5">
+    <div class="col-sm">
+      <app-middle-text></app-middle-text>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col-sm">
+      <app-monster [dansCookiePackage]="selectedDansCookiePackage"></app-monster>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col-sm">
+      <app-footer></app-footer>
+    </div>
+  </div>
+  <app-cross (close)="onClose()"></app-cross>
+</div>

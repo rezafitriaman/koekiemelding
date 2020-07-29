@@ -1,0 +1,15 @@
+.cross {
+    position: absolute;
+    right: -95px;
+    top: -35px;
+    display: block;
+    height: 30px;
+    width: 30px;
+    
+    svg {
+        .line-one, 
+        .line-two {
+            fill:none;stroke:#866427;stroke-width:3;stroke-miterlimit:10;
+        }
+    }
+}
